@@ -1,11 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700,800,900 | Ubuntu: 100,200,300,400,500,600,700,800,900');
 
-.alert-container{
+.alert-container {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
-.alert-warning{
+.alert-warning {
     margin: 0;
+}
+
+.nav {
+    background-color: #fff;
+}
+
+.callout-container {
+    /*height: 80vh;*/
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.callout-container img {
+    width: 70%;
+    margin-left: 25%;
+}
+
+.hero-image {
+    position: relative;
+    left: 0;
+    
+}
+
+.jumbotron {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    margin: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
