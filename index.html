@@ -12,58 +12,67 @@
 </head>
 
 <body>
-    <header>
-        <!--Nav-->
-        <nav class="navbar navbar-light navbar-expand-sm bg-light">
-            <div class="social-links mr-auto">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
+ <!--Alert for subscription-->
+    <div class="container-fluid alert-container">
+        <div class="row d-none d-sm-block">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <strong>NEW feature is on!</strong> Weekly update on gigs, festivals and product with prizes to collect. <a href="#" data-toggle="modal" data-target="#signUpModal">Click here to suscribe on Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav-->
+    <nav class="navbar navbar-light navbar-expand-sm bg-light">
+        <div class="social-links mr-auto">
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
                             <i class="fa fa-pinterest" aria-hidden="true"></i>
                             <span class="sr-only">Pinterest</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
                         </a>
-                    </li>
-                </ul>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDropdown" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDropdown" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
-                    <li class="nav-item dropdown mr-2">
+        <div class="collapse navbar-collapse" id="navbarTogglerDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
+                <li class="nav-item dropdown mr-2">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Media
         </a>
@@ -73,23 +82,16 @@
                         <a class="dropdown-item" href="#">Gallery</a>
                     </div>
                 </li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="">Gigs</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="">Contact</a></li>
-                    <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Suscribe!!!</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
-    <section class="container mt-3">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>NEW feature is on!</strong> Weekly update on gigs, festivals and product with prizes to collect. <a href="#" data-toggle="modal" data-target="#signUpModal">Click here to suscribe on Newsletter</a>
-                </div>
-            </div>
+                <li class="nav-item mr-2"><a class="nav-link" href="">Gigs</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="">Contact</a></li>
+                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Suscribe!!!</a></li>
+            </ul>
         </div>
-        <!-- Callout -->
+    </nav>
+
+   
+    <!-- Callout -->
+    <div class="container callout-container">
         <div class="row">
             <section class=" col-12 callout jumbotron text-center">
                 <h1>Special occasion comming up?</h1>
@@ -98,9 +100,10 @@
                 <p class="text-muted"><small>Available for Weddings, Christmass parties and more</small></p>
             </section>
         </div>
-        <!-- /.callout -->
-    </section>
+    </div>
+    <!-- /.callout -->
 
+    <!---Modal for subscription-->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -132,7 +135,7 @@
         </div>
     </div>
 
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
