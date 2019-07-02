@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700,800,900 | Ubuntu: 100,200,300,400,500,600,700,800,900');
 
+/* ---------------------------------------GENERAL CONTENT */
+
+/* Alert */
+
 .alert-container {
     padding: 0;
     margin: 0;
@@ -8,18 +12,104 @@
 
 .alert-warning {
     margin: 0;
+    padding: 5px 15px;
+    color: #86733b;
+    background-color: #ffd962;
+    border-color: #ffd962;
+}
+
+/* Social */
+
+.navbar .social-links li a i {
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    padding: 12px 0;
+    border-radius: 20%;
+    line-height: 1px;
+    text-align: center;
+    vertical-align: center;
+    color: #000;
+    background: #fff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+.list-inline{
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 1.1rem;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #5c6269;
+    border-color: #5c6269;
+    padding: 0 2px;
+    display: block;
+}
+
+/* Navigation */
+
+.nav-wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .nav {
     background-color: #fff;
 }
 
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: #fff;
+    padding-right: 7%;
+    padding-left: 3%;
+    height: 70px;
+    
+}
+
+.navbar .navbar-nav a{
+    padding: 0 30px;
+}
+
+
+/* Page title */
+
+.row .page-title{
+    position: absolute;
+}
+
+.offset-span{
+    margin-left: 6.4vw;
+}
+
+.row .page-title h1{
+    font-size: 5vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    text-transform: uppercase;
+}
+
+/* Jumbotron and Image */
 .callout-container {
     /*height: 80vh;*/
     max-height: 450px;
     overflow: hidden;
 }
 
+.jumbotron,
 .callout-container img {
     width: 70%;
     margin-left: 25%;
@@ -28,17 +118,76 @@
 .hero-image {
     position: relative;
     left: 0;
-    
 }
 
-.jumbotron {
+.jumbotron{
     position: absolute;
     background-color: transparent;
-    color: white;
-    margin: 0;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    color: #fff;
+    margin-left: 23vw;
+    padding-top: 2vw;
+}
+
+.btn-cta{
+    background-color: transparent;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+/* Hover */
+
+.social-links li a i:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#navbarTogglerDropdown > ul > li:hover{
+    font-weight: 500;
+}
+
+.btn-cta:hover,
+.btn-cta:active,
+.btn-cta:focus,
+.btn-cta:active:focus {
+    background-color: rgba(0,0,0,0.4);
+    border-color: #ffd962 ;
+    color: #ffd962;
+}
+
+/* Media Query for Moblie */
+
+@media (max-width:575px){
+#navbarTogglerDropdown {
+    background-color: #fff;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    
+.list-inline .social-links{
+    font-size: 1.35rem;
+    }
+    
+.social-links .list-inline .list-inline-item{
+    margin-right: 0.3rem;
+}
+    
+#navbarTogglerDropdown > ul > li{
+    margin-top: 12%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    }
+}
+
+/* ------------------------------------ CONTENT UNIQUE TO PAGE */
+
+.page-content-container{
+    margin: 0 7%;
 }
