@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700,800,900 | Ubuntu: 100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900 | Ubuntu: 100,200,300,400,500,600,700,800,900');
 
 /* ---------------------------------------GENERAL CONTENT */
 
@@ -184,10 +184,44 @@
     font-size: 20px;
     letter-spacing: 4px;
     }
+
+.quotes .blockquote p{
+    margin-top: 6vw;
+    }
+
+.btn-outline-secondary{
+    margin-bottom: 6vw;
+    }
 }
 
 /* ------------------------------------ CONTENT UNIQUE TO PAGE */
 
 .page-content-container{
     margin: 0 7%;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 6vw;
 }
+
+/* About */
+
+#band-selection > div.list-group.band-memebers > a > i{
+    float: right;
+}
+
+.quotes{
+    font-family: "ubuntu", sans-serif;
+    color: #61bebf;
+}
+
+.quotes .blockquote{
+    margin-top: 3vw;
+    font-size: 1.40rem;
+}
+
+.btn-outline-secondary{
+    margin-bottom: 3vw;
+}
+
+.band-bio-container{
+    text-align: justify;
+    }
