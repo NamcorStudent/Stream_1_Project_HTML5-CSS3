@@ -89,6 +89,7 @@
 
 .row .page-title{
     position: absolute;
+    z-index: 1;
 }
 
 .offset-span{
@@ -192,6 +193,15 @@
 .btn-outline-secondary{
     margin-bottom: 6vw;
     }
+    
+.conteiner-fluid.page-content-container{
+    margin-top: 25px;
+    }
+
+.media-sub-heading{
+    margin: 15px 0px;
+}
+
 }
 
 /* ------------------------------------ CONTENT UNIQUE TO PAGE */
@@ -199,12 +209,16 @@
 .page-content-container{
     margin: 0 7%;
     font-family: "Open Sans", sans-serif;
-    margin-top: 6vw;
+    margin-top: 50px;
+}
+
+.list-group-item{
+        display: flow-root;
 }
 
 /* About */
-
-#band-selection > div.list-group.band-memebers > a > i{
+.band-members > a > i,
+#band-selection > .list-group.band-memebers > a > i{
     float: right;
 }
 
@@ -224,4 +238,24 @@
 
 .band-bio-container{
     text-align: justify;
-    }
+}
+    
+/* Media */    
+    
+.video-title{
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 10px 0px;
+}
+
+.video-column p{
+    text-align: right;
+}
+
+.video-column .video-director-name{
+    text-transform: uppercase;
+}
+
+hr.video-divider{
+    border-top: 1px solid #333;
+}
