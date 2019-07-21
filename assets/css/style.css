@@ -419,3 +419,8 @@ button#next{
 }
 
 /*---------------/MUSIC PLAYER STYLING OVER--------------------*/
+
+/*gallery*/
+.gallery-row{
+  margin: 15px;
+}

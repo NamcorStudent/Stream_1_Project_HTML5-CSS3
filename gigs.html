@@ -74,8 +74,8 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="active nav-item mr-2"><a class="nav-link" href="media.html">Media</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="gigs.html">Gigs</a></li>
+                    <li class=" nav-item mr-2"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="gigs.html">Gigs</a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link btn btn-success" href="#" data-toggle="modal" data-target="#subscribeModal">Click to suscribe on Newsletter!!!</a></li>
                 </ul>
@@ -86,7 +86,7 @@
     <div class="container-fluid callout-container">
         <div class="row">
             <div class="col-3 page-title">
-                <h1><span>Media</span></h1>
+                <h1><span>Gigs</span></h1>
                 <div class="list-group media-list d-none d-sm-block">
                     <a href="#video" class="list-group-item list-group-item-action">
                         <i class="fa fa-video-camera" aria-hidden="true"></i>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="index.html"><img src="assets/images/media907x497.jpg"></img></a>
+                <a href="index.html"><img src="assets/images/gigs1200x798.jpg"></img></a>
             </div>
         </div>
     </div>
@@ -132,9 +132,9 @@
                 </div>
             </div>
         </div>
-        <div class="row media-material">
+        <div class="row media-material gigs-schedule">
             <div class="col band-bio-container media-content-container" id="band-bio">
-                <div class="row media-content">
+                <div class="row gigs-content">
                     <div class="col video-column">
                         <h2 id="video" class="media-sub-heading">Video</h2>
                         <div class="row video-content">
@@ -149,119 +149,12 @@
                                 <hr class="video-divider">
                             </div>
                         </div>
-                        <div class="row video-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kZGMNifNwVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                                <h4 class="video-title">The Wedge</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">Vjeran Pavlinic</span></p>
-                                <hr class="video-divider">
-                            </div>
-                        </div>
-                        <div class="row video-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PNkxPAReT5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                                <h4 class="video-title">Theme From Slaying Beauty</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">Gonzo</span></p>
-                                <hr class="video-divider">
-                            </div>
-                        </div>
-                        <div class="row video-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oG6sCwN-h8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                                <h4 class="video-title">Chaotica</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">TV Show Breaking Bad s05e12</span></p>
-                                <hr class="video-divider">
-                            </div>
-                        </div>
+                        
                         <a href="media.html"><button type="button" class="btn btn-outline-secondary">Return to the top of the page!</button></a>
                     </div>
                 </div>
-                <div class="row media-content">
-                    <div class="col music-column">
-                        <h2 id="music" class="media-sub-heading">Music</h2>
-                        <div class="row video-content music-player-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9 music-column">
-                                 <h4 class="video-title LP-title">Play Out Of Tune <span>(April 1995)</span></h4>
-                                <p>Label: <br class="d-sm-none"><span class="video-director-name label-name">Slusaj Najglasnije</span></p>
-<!----------------------------------------------------------------------------MUSIC PLAYER-------------------------------------------->
-                                <div class="container" id="music-player-container">
-                                    <div id="audio-image">
-                                        <img class="cover" />
-                                    </div>
-                                    <div id="audio-player">
-                                        <div id="audio-info">
-                                            <span class="artist"></span> - <span class="title"></span>
-                                        </div>
-                                        <input id="volume" type="range" min="0" max="10" value="5" />
-                                        <br>
-                                        <div id="buttons">
-                                            <span>
-                                    			<button id="prev"></button>
-                                    			<button id="play"></button>
-                                    			<button id="pause"></button>
-                                    			<button id="stop"></button>
-                                    			<button id="next"></button>
-                                			</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div id="tracker">
-                                            <div id="progressBar">
-                                                <span id="progress"></span>
-                                            </div>
-                                            <span id="duration"></span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <ul id="playlist" class="hidden">
-                                            <li song="Bambi Molesters - 01 Wanganui.mp3" cover="cover1.jpg" artist="The Bambi Molesters">01 Wanganui</li>
-                                            <li song="Bambi Molesters - 02 She's So Soft Inside.mp3" cover="cover1.jpg" artist="The Bambi Molesters">02 She's So Soft Inside</li>
-                                            <li song="Bambi Molesters - 03 1000 Songs.mp3" cover="cover1.jpg" artist="The Bambi Molesters">03 1000 Songs</li>
-                                            <li song="Bambi Molesters - 04 Idle Moments.mp3" cover="cover1.jpg" artist="The Bambi Molesters">04 Idle Moments</li>
-                                            <li song="Bambi Molesters - 05 Her Delta Blues.mp3" cover="cover1.jpg" artist="The Bambi Molesters">05 Her Delta Blues</li>
-                                            <li song="Bambi Molesters - 06 Good Times.mp3" cover="cover1.jpg" artist="The Bambi Molesters">06 Good Times</li>
-                                            <li song="Bambi Molesters - 07 Catatonya.mp3" cover="cover1.jpg" artist="The Bambi Molesters">07 Catatonya</li>
-                                            <li song="Bambi Molesters - 08 Little Beach Bunny.mp3" cover="cover1.jpg" artist="The Bambi Molesters">08 Little Beach Bunny</li>
-                                            <li song="Bambi Molesters - 09 Cradle Snatcher.mp3" cover="cover1.jpg" artist="The Bambi Molesters">09 Cradle Snatcher</li>
-                                            <li song="Bambi Molesters - 10 I Can't Believe It.mp3" cover="cover1.jpg" artist="The Bambi Molesters">10 I Can't Believe It</li>
-                                            <li song="Bambi Molesters - 11 Charlie Brown Manson.mp3" cover="cover1.jpg" artist="The Bambi Molesters">11 Charlie Brown Manson</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <hr class="video-divider">
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="row media-content">
-                    <div class="col music-column">
-                        <h2 id="gallery" class="media-sub-heading">Gallery</h2>
-                        <div class="row video-content music-player-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9 gallery-column">
-                                 
-                                <hr class="video-divider">
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
             </div>
-            
+
         </div>
 
         <!---Modal for subscription-->
@@ -299,8 +192,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

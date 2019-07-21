@@ -113,3 +113,11 @@ function showDuration(){
 		$('#progress').css('width',value+'%');
 	});
 }
+
+
+
+//Gallery rendering code
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});

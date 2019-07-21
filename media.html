@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <!--Gallery required-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
     <title>The Bambi Molesters | Official</title>
 </head>
 
@@ -188,51 +193,112 @@
                 <div class="row media-content">
                     <div class="col music-column">
                         <h2 id="music" class="media-sub-heading">Music</h2>
-                        <div class="row video-content">
+                        <div class="row video-content music-player-content">
                             <div class="d-none d-sm-block col-sm-3">
                             </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NmmRlddGT5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="col-sm-9 music-column">
+                                <h4 class="video-title LP-title">Play Out Of Tune <span>(April 1995)</span></h4>
+                                <p>Label: <br class="d-sm-none"><span class="video-director-name label-name">Slusaj Najglasnije</span></p>
+                                <!----------------------------------------------------------------------------MUSIC PLAYER-------------------------------------------->
+                                <div class="container" id="music-player-container">
+                                    <div id="audio-image">
+                                        <img class="cover" />
+                                    </div>
+                                    <div id="audio-player">
+                                        <div id="audio-info">
+                                            <span class="artist"></span> - <span class="title"></span>
+                                        </div>
+                                        <input id="volume" type="range" min="0" max="10" value="5" />
+                                        <br>
+                                        <div id="buttons">
+                                            <span>
+                                    			<button id="prev"></button>
+                                    			<button id="play"></button>
+                                    			<button id="pause"></button>
+                                    			<button id="stop"></button>
+                                    			<button id="next"></button>
+                                			</span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div id="tracker">
+                                            <div id="progressBar">
+                                                <span id="progress"></span>
+                                            </div>
+                                            <span id="duration"></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <ul id="playlist" class="hidden">
+                                            <li song="Bambi Molesters - 01 Wanganui.mp3" cover="cover1.jpg" artist="The Bambi Molesters">01 Wanganui</li>
+                                            <li song="Bambi Molesters - 02 She's So Soft Inside.mp3" cover="cover1.jpg" artist="The Bambi Molesters">02 She's So Soft Inside</li>
+                                            <li song="Bambi Molesters - 03 1000 Songs.mp3" cover="cover1.jpg" artist="The Bambi Molesters">03 1000 Songs</li>
+                                            <li song="Bambi Molesters - 04 Idle Moments.mp3" cover="cover1.jpg" artist="The Bambi Molesters">04 Idle Moments</li>
+                                            <li song="Bambi Molesters - 05 Her Delta Blues.mp3" cover="cover1.jpg" artist="The Bambi Molesters">05 Her Delta Blues</li>
+                                            <li song="Bambi Molesters - 06 Good Times.mp3" cover="cover1.jpg" artist="The Bambi Molesters">06 Good Times</li>
+                                            <li song="Bambi Molesters - 07 Catatonya.mp3" cover="cover1.jpg" artist="The Bambi Molesters">07 Catatonya</li>
+                                            <li song="Bambi Molesters - 08 Little Beach Bunny.mp3" cover="cover1.jpg" artist="The Bambi Molesters">08 Little Beach Bunny</li>
+                                            <li song="Bambi Molesters - 09 Cradle Snatcher.mp3" cover="cover1.jpg" artist="The Bambi Molesters">09 Cradle Snatcher</li>
+                                            <li song="Bambi Molesters - 10 I Can't Believe It.mp3" cover="cover1.jpg" artist="The Bambi Molesters">10 I Can't Believe It</li>
+                                            <li song="Bambi Molesters - 11 Charlie Brown Manson.mp3" cover="cover1.jpg" artist="The Bambi Molesters">11 Charlie Brown Manson</li>
+                                        </ul>
+                                    </div>
+
                                 </div>
-                                <h4 class="video-title">Invasion of the Reverb Snatchers</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">M.A. Littler, Slowboat Films</span></p>
                                 <hr class="video-divider">
                             </div>
                         </div>
-                        <div class="row video-content">
+                        <a href="media.html"><button type="button" class="btn btn-outline-secondary">Return to the top of the page!</button></a>
+
+
+                    </div>
+                </div>
+                <div class="row media-content">
+                    <div class="col music-column">
+                        <h2 id="gallery" class="media-sub-heading">Gallery</h2>
+                        <div class="row video-content music-player-content">
                             <div class="d-none d-sm-block col-sm-3">
                             </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kZGMNifNwVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                                <h4 class="video-title">The Wedge</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">Vjeran Pavlinic</span></p>
+                            <div class="col-sm-9 gallery-column">
+                                <div class="container">
+                                    <div class="row gallery-row">
+                                        <a href="assets/images/gallery1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery1.jpg" class="img-fluid rounded">
+    </a>
+                                        <a href="assets/images/gallery2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery2.jpg" class="img-fluid rounded">
+    </a>
+                                        <a href="assets/images/gallery3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery3.jpg" class="img-fluid rounded">
+    </a>
+                                    </div>
+                                    <div class="row gallery-row">
+                                        <a href="assets/images/gallery4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery4.jpg" class="img-fluid rounded">
+    </a>
+                                        <a href="assets/images/gallery5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery5.jpg" class="img-fluid rounded">
+    </a>
+                                        <a href="assets/images/gallery6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery6.jpg" class="img-fluid rounded">
+    </a>
+                                    </div>
+                                    <div class="row gallery-row">
+                                        <a href="assets/images/gallery7.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery7.jpg" class="img-fluid rounded">
+    </a>
+                                        <a href="assets/images/gallery8.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery8.jpg" class="img-fluid rounded">
+    </a>
+                                        <a href="assets/images/gallery9.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="assets/images/gallery9.jpg" class="img-fluid rounded">
+    </a>
+                                    </div>
+                                </div>
                                 <hr class="video-divider">
                             </div>
                         </div>
-                        <div class="row video-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PNkxPAReT5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                                <h4 class="video-title">Theme From Slaying Beauty</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">Gonzo</span></p>
-                                <hr class="video-divider">
-                            </div>
-                        </div>
-                        <div class="row video-content">
-                            <div class="d-none d-sm-block col-sm-3">
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oG6sCwN-h8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                                <h4 class="video-title">Chaotica</h4>
-                                <p>Directed by: <br class="d-sm-none"><span class="video-director-name">TV Show Breaking Bad s05e12</span></p>
-                                <hr class="video-divider">
-                            </div>
-                        </div>
+
+                        <a href="media.html"><button type="button" class="btn btn-outline-secondary">Return to the top of the page!</button></a>
+
                     </div>
                 </div>
             </div>
@@ -273,9 +339,13 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-        <script src="js/jquery.js"></script>
-        <script src="js/main.js"></script>
+        <!--Music player-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!---Gallery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
 </body>
 
 </html>
