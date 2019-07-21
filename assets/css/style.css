@@ -158,6 +158,7 @@
     background-color: rgba(0,0,0,0.4);
     border-color: #ffd962 ;
     color: #ffd962;
+    box-shadow: none;
 }
 
 /* Media Query for Moblie */
@@ -423,4 +424,54 @@ button#next{
 /*gallery*/
 .gallery-row{
   margin: 15px;
+}
+
+
+/*-------------------------------------------GIGS---------------------------------*/
+.gigs-content{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.gigs-dates{
+    align-items: baseline;
+    display: border-box;
+    padding: 0 20px;
+}
+.gigs-info .gigs-day{
+    font-size: 1rem;
+}
+
+.gigs-info{
+    display: border-box;
+    padding: 2px 15px;
+}
+
+.gigs-info.tickets-btn-center{
+    text-align: center;
+}
+
+.gigs-info a button{
+    width: 200px;
+    
+}
+
+.btn-tickets{
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.btn-tickets:hover,
+.btn-tickets:active,
+.btn-tickets:focus,
+.btn-tickets:active:focus{
+    box-shadow: none;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
 }
