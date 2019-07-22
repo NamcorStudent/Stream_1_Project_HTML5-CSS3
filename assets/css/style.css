@@ -242,6 +242,9 @@
 }
     
 /* Media */    
+.media-content-conteiner{
+    margin-bottom: 50px;
+}
     
 .video-title{
     text-transform: uppercase;
