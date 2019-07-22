@@ -478,3 +478,37 @@ button#next{
     background-color: #000;
     border: 1px solid #000;
 }
+
+/*------------------------------------------CONTACT--------------------------*/
+
+.contact-heading {
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.btn-submit-form {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.subscribe-call{
+    margin-top: 25px;
+}
+
+.subscribe-call>button{
+    margin-top: 10px;
+}
+
+.subscribe-call>p {
+    margin-bottom: 10px;
+}
+
+.contact-page-content-conteiner{
+    margin-top: 0;
+}
