@@ -255,7 +255,11 @@
 .video-column p{
     text-align: right;
 }
-
+.music-column .under-title-link,
+.video-column .under-title-link,
+.gallery-column .under-title-link{
+    text-align: left;
+}
 .music-column .label-name,
 .video-column .video-director-name{
     text-transform: uppercase;
@@ -501,11 +505,11 @@ button#next{
     margin-top: 25px;
 }
 
-.subscribe-call>button{
+.subscribe-call button{
     margin-top: 10px;
 }
 
-.subscribe-call>p {
+.subscribe-call p {
     margin-bottom: 10px;
 }
 
